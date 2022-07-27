@@ -70,7 +70,7 @@ videoroom_sweeper:
 log:
   log_to_stdout: true                   # Whether the Janus output should be written
                                         # to stdout or not (default=true)
-  log_to_file: "/var/log/janus-sentinel.log" # Whether to use a log file or not, if empty
+  log_to_file: "/home/janus/log/janus-sentinel.log" # Whether to use a log file or not, if empty
                                         # means not to log to a file
   debug_level: 'DEBUG'                  # Debug/logging level, valid values are
                                         # DEBUG/INFO/WARN/ERROR/FATAL, default is DEBUG

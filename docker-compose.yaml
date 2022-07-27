@@ -8,3 +8,6 @@ services:
     image: janus-cloud
     volumes:
       - "./conf/:/home/janus/conf"
+    ports:
+      - "8288:8288"
+      - "8188:8188"

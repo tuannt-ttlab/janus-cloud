@@ -15,3 +15,5 @@ COPY --chown=janus:janus . ./
 
 RUN pip install .
 
+# CMD ["janus-sentinel", "/home/janus/conf/janus-sentinel.yml"]
+CMD ["janus-proxy", "/home/janus/conf/janus-proxy.yml"]

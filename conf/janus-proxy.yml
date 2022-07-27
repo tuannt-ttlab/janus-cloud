@@ -39,7 +39,7 @@ general:
 log:
   log_to_stdout: true                   # Whether the Janus output should be written
                                         # to stdout or not (default=true)
-  log_to_file: "/var/log/janus-proxy.log" # Whether to use a log file or not, if empty
+  log_to_file: "/home/janus/log/janus-proxy.log" # Whether to use a log file or not, if empty
                                         # means not to log to a file
   debug_level: 'DEBUG'                  # Debug/logging level, valid values are
                                         # DEBUG/INFO/WARN/ERROR/FATAL, default is DEBUG
@@ -91,5 +91,5 @@ admin_api:
 
 # static configured backend Janus-gateway server besides the ones auto-registered by janus-sentinel
 janus_server:
-  - {name: 'server1', url: 'ws://127.0.0.1:8188', status: 0, session_timeout: 60}
+  - {name: 'streaming1', url: 'ws://172.31.17.76:8188', status: 0, session_timeout: 60}
 
