@@ -12,3 +12,10 @@ services:
       - "8288:8288"
       - "8100:8100"
       - "8200:8200"
+    networks:
+      - janus_network
+
+networks:
+  janus_network:
+    name: janus_network
+    driver: bridge
